@@ -1,0 +1,73 @@
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-10 09:20:59.495
+!MESSAGE Can't write workspace state
+!STACK 0
+java.io.FileNotFoundException: /Users/loupis.io/eclipse-workspace/JavaEshopProject/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:127)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:977)
+	at org.eclipse.m2e.core.internal.MavenPluginActivator$1.saving(MavenPluginActivator.java:142)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:387)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:204)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:207)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1164)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2356)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-06-10 09:21:02.901
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2022-06-10 09:21:02.902
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2022-06-10 09:21:02.902
+!MESSAGE Could not write workspace metadata '/Users/loupis.io/eclipse-workspace/JavaEshopProject/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree'.
+!STACK 0
+java.io.FileNotFoundException: /Users/loupis.io/eclipse-workspace/JavaEshopProject/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1381)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1168)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2356)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.mylyn.trac.core 2 0 2022-06-10 09:21:03.155
+!MESSAGE The Trac respository configuration cache could not be written
+!STACK 0
+java.io.FileNotFoundException: /Users/loupis.io/eclipse-workspace/JavaEshopProject/.metadata/.plugins/org.eclipse.mylyn.trac.core/repositoryConfigurations (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.mylyn.internal.trac.core.TracClientManager.writeCache(TracClientManager.java:141)
+	at org.eclipse.mylyn.internal.trac.core.TracRepositoryConnector.stop(TracRepositoryConnector.java:645)
+	at org.eclipse.mylyn.internal.trac.core.TracCorePlugin.stop(TracCorePlugin.java:65)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:870)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:862)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1888)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-06-10 09:21:03.738
+!MESSAGE The workspace will exit with unsaved changes in this session.
