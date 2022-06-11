@@ -46,11 +46,11 @@ public abstract class Item {
 		this.price = price;
 	}
 	
-	public String getDiscripsion() {
+	public String getDescription() {
 		return description;
 	}
 	
-	public void setDiscripsion(String discripsion) {
+	public void setDescription(String discripsion) {
 		this.description = discripsion;
 	}
 	

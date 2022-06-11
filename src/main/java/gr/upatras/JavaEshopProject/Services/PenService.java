@@ -63,7 +63,7 @@ public class PenService implements IPenService {
 		List<Pen> penList = new ArrayList<Pen>();
 		for(Item item :itemService.returnAll()) {
 			if(item instanceof Pen) {
-				if(((Pen) item).getColor().equals(colour))
+				if(((Pen) item).getColour().equals(colour))
 				penList.add((Pen) item);
 			}
 		}

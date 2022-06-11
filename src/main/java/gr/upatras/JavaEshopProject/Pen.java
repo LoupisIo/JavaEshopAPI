@@ -10,27 +10,27 @@ import java.util.*;
  */
 public class Pen extends Item{
 	
-	public String color;
+	public String colour;
 	public double tipSize; /* In mm */
 	
 	
 	public String getDetails() {
-        return color + " " + tipSize;
+        return colour + " " + tipSize;
     }
 	
-	public Pen(int id, String name, String description, double price, int stock, String color, Double tipSize) {
+	public Pen(int id, String name, String description, double price, int stock, String colour, Double tipSize) {
 		super(id, name, description, price, stock,"Pen");
-		this.color = color;
+		this.colour = colour;
 		this.tipSize = tipSize;
 		
 	}
 
-	public String getColor() {
-		return color;
+	public String getColour() {
+		return colour;
 	}
 
-	public void setColor(String color) {
-		this.color = color;
+	public void setColour(String colour) {
+		this.colour = colour;
 	}
 
 	public double getTipSize() {

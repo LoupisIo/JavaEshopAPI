@@ -59,11 +59,11 @@ public class NoteBookService implements INoteBookService {
 
 
 	@Override
-	public List<NoteBook> findBySecions(int secions) {
+	public List<NoteBook> findBySections(int sections) {
 		List<NoteBook> noteBookList = new ArrayList<NoteBook>();
 		for(Item item :itemService.returnAll()) {
 			if(item instanceof NoteBook) {
-				if(((NoteBook) item).getSections()==secions)
+				if(((NoteBook) item).getSections()==sections)
 				noteBookList.add((NoteBook) item);
 			}
 		}
@@ -85,6 +85,11 @@ public class NoteBookService implements INoteBookService {
 		}
 		return noteBookList;	
 	}
+
+
+
+
+	
 
 	
 	
